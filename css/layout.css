@@ -1,0 +1,72 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#container {
+	position: relative;
+	width: 600px;
+	height: 600px;
+	overflow: hidden;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+#bird {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	/*border: 1px solid brown;*/
+	background: url("../images/bird.png") no-repeat center;
+	background-size: 25px;
+	transition: top 90ms;
+}
+
+#background {
+	/*position: absolute;*/
+	width: 10000px;
+	height: 600px;
+	margin-left: 0px;
+	background: url("../images/bg.png") repeat-x;
+}
+
+#scoreDiv {
+	position: absolute;
+	text-align: center;
+	top: 0;
+	left: 0;
+	/*display: none;*/
+}
+
+input {
+	border: none;
+	text-align: center;
+	display: none;
+}
+
+#score {
+
+}
+
+.pipe {
+	position: absolute;
+	width: 50px;
+	border: 1px solid green;
+	background-color: green;
+}
+
+
+/*
+	this.createBackground = function() {
+		this.bG = document.createElement("div");
+		this.bG.setAttribute("id", "background");
+
+		document.getElementById("container").appendChild(this.bG);
+	}
+
+	this.createScoreBoard = function() {
+		this.scoreBoard = document.createElement("div");
+		this.scoreBoard.setAttribute("id", "scoreDiv");
+
+		document.getElementById("container").appendChild(this.scoreBoard);
+	}*/
